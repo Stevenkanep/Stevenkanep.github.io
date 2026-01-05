@@ -1,0 +1,29 @@
+body {
+    background: #FFFDD0;
+    color: #222;
+    min-height: 100vh;
+}
+footer {font-size: .9rem; }
+h1.display-1 {letter-spacing: .06rem; }
+.table input.form-color-sm {padding: .25rem .4rem;
+font-size: .85rem;}
+.navbar{ 
+    background-color: #A59079 !important;
+}
+.navbar .navbar-brand, .navbar .nav-link{
+    color: #333 !important;
+}
+.navbar .nav-link.active {
+    font-weight: 600;
+    text-decoration: underline;
+}
+.navbar .navbar-toggler{
+    border-color: #ccc;
+}
+.list-group {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+.list-group-item{
+    display: list-item;
+}
