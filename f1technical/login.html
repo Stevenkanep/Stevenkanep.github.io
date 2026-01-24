@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login - Build Best Match</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <img class="bg-img" src="background/1010.jpg" alt="">
+
+<header>
+  <img src="Logo/Icon-build.webp" alt="Logo">
+  <h1>Build Best Match!</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Sign up</a>
+</nav>
+
+<main>
+  <section style="max-width:520px;margin:0 auto">
+    <h2>Login</h2>
+
+    <form id="loginForm">
+      <label>
+        Email address
+        <input id="loginEmail" type="email" required placeholder="you@example.com">
+      </label>
+
+      <label>
+        Password
+        <input id="loginPassword" type="password" required placeholder="••••••••">
+      </label>
+
+      <div style="display:flex;gap:12px;margin-top:12px">
+        <button type="submit">Sign in</button>
+        <a class="btn-ghost" href="signup.html"
+           style="align-self:center;padding:8px 10px;text-decoration:none;">
+          Create account
+        </a>
+      </div>
+
+      <p id="loginMsg" style="margin-top:10px;color:#b00020"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Build Best Match</p>
+  <p>Email: buildbestmatch@gmail.com | Phone: 09123456789</p>
+</footer>
+
+<script src="siteModule.js"></script>
+<script>
+  SiteModule.attachLogin('#loginForm', '#loginMsg');
+</script>
+
+</body>
+</html>
