@@ -1,44 +1,72 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pabelona — Home</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build Best Match!</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">PABELONA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMain">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="segment.html">Segment</a></li>
-        </ul>
-      </div>
+  <img class="bg-img" src="background/1010.jpg" alt="">
+
+<header>
+  <img src="Logo/Icon-build.webp" alt="Logo">
+  <h1>Build Best Match!</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Sign up</a>
+</nav>
+
+<main>
+  <section class="products">
+    <div class="section-title">
+      <h1>Featured Products!</h1>
     </div>
-  </nav>
 
- 
-  <main class="container py-5">
-    <section class="text-center">
-      <h1 class="display-1 fw-bold">PABELONA</h1>
-      <p class="lead fs-4 text-muted">Steven Kane</p>
-    </section>
-  </main>
+    <div class="product-grid">
+      <article class="product-card">
+        <a class="img-wrap" target="_blank" href="#">
+          <img src="productimages/FFBooster.png" alt="Final Fantasy Booster">
+        </a>
+        <div class="product-info">
+          <p class="product-name">Final Fantasy Collectors Booster Box</p>
+          <p class="product-price">₱30,000</p>
+        </div>
+      </article>
 
-  <footer class="text-center py-3 text-muted">© <span id="year"></span> Steven Kane Pabelona</footer>
+      <article class="product-card">
+        <a class="img-wrap" target="_blank" href="#">
+          <img src="productimages/AetherBooster.jpg" alt="Aether Booster">
+        </a>
+        <div class="product-info">
+          <p class="product-name">Aether Drift Collector Booster</p>
+          <p class="product-price">₱18,000</p>
+        </div>
+      </article>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <article class="product-card">
+        <a class="img-wrap" target="_blank" href="#">
+          <img src="productimages/ModernHorizonsBooster.webp" alt="Modern Horizons Booster">
+        </a>
+        <div class="product-info">
+          <p class="product-name">Modern Horizons Collectors Booster Box</p>
+          <p class="product-price">₱38,000</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Build Best Match</p>
+  <p>Email: buildbestmatch@gmail.com | Phone: 09123456789</p>
+</footer>
+<script src="asyncProducts.js"></script>
 </body>
 </html>
